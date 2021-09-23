@@ -1,0 +1,29 @@
+@import url(//db.onlinewebfonts.com/c/ec9c69b803f20a95deb88c41b74e5a62?family=Ambroise);
+
+*{
+    cursor: none;
+ }
+
+.ambroise{
+    font-family: Ambroise;
+}
+
+.putar{
+    animation-name: spin;
+  animation-duration: 10000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+
+.cursor{
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    z-index: 40;
+    border-radius: 50%;
+    border: 3px solid white;
+
+    transform: translate(-50%,- 50%);
+    pointer-events: none ;
+    mix-blend-mode: difference;
+}
